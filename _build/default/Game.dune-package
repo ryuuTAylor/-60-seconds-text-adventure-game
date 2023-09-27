@@ -1,0 +1,94 @@
+(lang dune 3.6)
+(name Game)
+(sections (lib .) (libexec .) (doc ../../doc/Game))
+(files
+ (lib
+  (META
+   author.ml
+   author.mli
+   bunker.ml
+   bunker.mli
+   command.ml
+   command.mli
+   dune-package
+   events.ml
+   events.mli
+   game.a
+   game.cma
+   game.cmi
+   game.cmt
+   game.cmx
+   game.cmxa
+   game.ml
+   game__Author.cmi
+   game__Author.cmt
+   game__Author.cmti
+   game__Author.cmx
+   game__Bunker.cmi
+   game__Bunker.cmt
+   game__Bunker.cmti
+   game__Bunker.cmx
+   game__Command.cmi
+   game__Command.cmt
+   game__Command.cmti
+   game__Command.cmx
+   game__Events.cmi
+   game__Events.cmt
+   game__Events.cmti
+   game__Events.cmx
+   game__House.cmi
+   game__House.cmt
+   game__House.cmti
+   game__House.cmx
+   game__Inventory.cmi
+   game__Inventory.cmt
+   game__Inventory.cmti
+   game__Inventory.cmx
+   game__State.cmi
+   game__State.cmt
+   game__State.cmti
+   game__State.cmx
+   house.ml
+   house.mli
+   inventory.ml
+   inventory.mli
+   opam
+   state.ml
+   state.mli))
+ (libexec (game.cmxs))
+ (doc (README.md)))
+(library
+ (name Game)
+ (kind normal)
+ (archives (byte game.cma) (native game.cmxa))
+ (plugins (byte game.cma) (native game.cmxs))
+ (native_archives game.a)
+ (requires yojson ANSITerminal)
+ (main_module_name Game)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name Game)
+   (modules
+    ((name Author) (obj_name game__Author) (visibility public) (impl) (intf))
+    ((name Bunker) (obj_name game__Bunker) (visibility public) (impl) (intf))
+    ((name Command)
+     (obj_name game__Command)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Events) (obj_name game__Events) (visibility public) (impl) (intf))
+    ((name House) (obj_name game__House) (visibility public) (impl) (intf))
+    ((name Inventory)
+     (obj_name game__Inventory)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name State) (obj_name game__State) (visibility public) (impl) (intf)))
+   (alias_module
+    (name Game)
+    (obj_name game)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

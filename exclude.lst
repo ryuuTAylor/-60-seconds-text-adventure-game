@@ -1,0 +1,6 @@
+_build/*
+_coverage/*
+bisect*.coverage
+tutorial/*
+.DS_Store
+*.zip

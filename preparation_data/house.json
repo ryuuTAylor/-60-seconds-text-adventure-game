@@ -1,0 +1,208 @@
+{
+  "rooms": [
+    {
+      "id": "foyer",
+      "description": "You are in the foyer. Panic sweeps over you as the very literal bombshell is about to drop on you. Sweat drips from your palms as you scramble to make the most of your time.",
+      "exit_names": "Rooms: hallway",
+      "exits": [
+        {
+          "name": "hallway",
+          "room id": "hallway"
+        },
+        {
+          "name": "hall way",
+          "room id": "hallway"
+        },
+        {
+          "name": "doorway",
+          "room id": "hallway"
+        },
+        {
+          "name": "door way",
+          "room id": "hallway"
+        }
+      ],
+      "items": [
+        {
+          "label": "water",
+          "weight": 1
+        },
+        {
+          "label": "axe",
+          "weight": 4
+        },
+        {
+          "label": "soup",
+          "weight": 1
+        },
+        {
+          "label": "map",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "hallway",
+      "description": "You are in the hallway. The smells of a chicken pot pie waft through the kitchen door, tempting your famished stomach. You see the dining room in the distance, its details covered by the leaves of a potted plant. The entrance to the bunker looms ahead; you wonder if you should just hop in now.",
+      "exit_names": "Rooms: foyer, kitchen, dining room, bunker",
+      "exits": [
+        {
+          "name": "foyer",
+          "room id": "foyer"
+        },
+        {
+          "name": "dining room",
+          "room id": "dining room"
+        },
+        {
+          "name": "dining",
+          "room id": "dining room"
+        },
+        {
+          "name": "distance",
+          "room id": "dining room"
+        },
+        {
+          "name": "kitchen",
+          "room id": "kitchen"
+        },
+        {
+          "name": "kitchen door",
+          "room id": "kitchen"
+        },
+        {
+          "name": "door",
+          "room id": "kitchen"
+        },
+        {
+          "name": "chicken pot pie",
+          "room id": "dining room"
+        },
+        {
+          "name": "bunker",
+          "room id": "bunker"
+        },
+        {
+          "name": "entrance",
+          "room id": "bunker"
+        }
+      ],
+      "items": [
+        {
+          "label": "cards",
+          "weight": 1
+        },
+        {
+          "label": "gun",
+          "weight": 3
+        },
+        {
+          "label": "boy scout handbook",
+          "weight": 3
+        },
+        {
+          "label": "soup",
+          "weight": 1
+        },
+        {
+          "label": "water",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "description": "You are in the kitchen. Your hands fumble over the cabinet handles as you try to open them, dropping soup cans onto the floor. Your mind races, wondering if you should go to the dining room or bunker before it's too late.",
+      "exit_names": "Rooms: dining room, hallway",
+      "exits": [
+        {
+          "name": "hallway",
+          "room id": "hallway"
+        },
+        {
+          "name": "hall way",
+          "room id": "hallway"
+        },
+        {
+          "name": "back",
+          "room id": "hallway"
+        },
+        {
+          "name": "dining room",
+          "room id": "dining room"
+        },
+        {
+          "name": "dining",
+          "room id": "dining room"
+        }
+      ],
+      "items": [
+        {
+          "label": "bug spray",
+          "weight": 2
+        },
+        {
+          "label": "radio",
+          "weight": 3
+        },
+        {
+          "label": "soup",
+          "weight": 1
+        },
+        {
+          "label": "water",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "dining room",
+      "description": "You are in the dining room. A freshly cooked chicken pot pie sits as a set of 4 plates lays upon the table. A twinge of sadness stirs within you, as you know it will never be eaten. You wonder if you should return to the hallway or to the kitchen to gather more supplies.",
+      "exit_names": "Rooms: kitchen, hallway",
+      "exits": [
+        {
+          "name": "hallway",
+          "room id": "hallway"
+        },
+        {
+          "name": "hall way",
+          "room id": "hallway"
+        },
+        {
+          "name": "back",
+          "room id": "hallway"
+        },
+        {
+          "name": "kitchen",
+          "room id": "kitchen"
+        }
+      ],
+      "items": [
+        {
+          "label": "water",
+          "weight": 1
+        },
+        {
+          "label": "soup",
+          "weight": 1
+        },
+        {
+          "label": "first aid kit",
+          "weight": 4
+        },
+        {
+          "label": "checkers",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "bunker",
+      "description": "You are in the bunker. You have escaped to safety. For now. Perhaps greater dangers lurk within.",
+      "exit_names": "",
+      "exits": [],
+      "items": []
+    }
+  ],
+  "start room": "foyer"
+}

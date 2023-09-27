@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "rooms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "exit_names": {
+            "type": "string"
+          },
+          "exits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "room id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "room id"
+              ]
+            }
+          },
+          "things": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "weight": {
+                  "type": "int"
+                }
+              },
+              "required": [
+                "name",
+                "weight"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "description",
+          "exit_names",
+          "exits",
+          "items"
+        ]
+      }
+    },
+    "start room": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "rooms",
+    "start room"
+  ]
+}

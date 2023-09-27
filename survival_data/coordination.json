@@ -1,0 +1,488 @@
+{
+  "events": [
+    {
+      "id": "Unknown Benefactor",
+      "descriptions": [
+        {
+          "text": "When we opened the bunker door this morning to let in some fresh, radioactive air, we discovered a small suitcase on our doorstep. There was no note on it and the neighborhood seemed empty. Should we take a look inside?"
+        },
+        {
+          "text": "During the night we heard some suspicious sounds coming from behind our door. When we peeked out in the morning, we saw a leather suitcase. It has no address or name on it, but we're pretty sure it's meant for us. Should we open it?"
+        },
+        {
+          "text": "The other day we heard a quiet knock on our door, but when we opened, we only found a suitcase on the doorstep and there was no one around. It isn't signed but it sure looks like it's meant for us! Should we check what's inside?"
+        }
+      ],
+      "choices": [
+        {
+          "name": "yes",
+          "implications": [
+            {
+              "text": "Inside the suitcase we found some soup, but... yuck! It expired a long time ago! We're not feeling very well, some of us spend the whole morning using the bucket in the corner... We're not accepting anonymous gifts ever again!",
+              "effect": "-20_health/-20_sanity"
+            },
+            {
+              "text": "It was an innocent looking bottle of water, so we took a sip. We thought we got lucky, but it was all a lie! Either that water was irradiated or it was some kind of biological weapon... it made us all feel pretty sick.",
+              "effect": "-20_health/-20_sanity"
+            },
+            {
+              "text": "Damn it, the gift was booby trapped! There was nothing inside besides some junk and as soon as we opened the suitcase, it exploded! Is anybody hurt?",
+              "effect": "-50_health"
+            },
+            {
+              "text": "We gladly accepted this sudden gift and despite our suspicions, it turned out it was just the regular tomato soup that we all know and love. Thank you, kind stranger!",
+              "effect": "+1_soup"
+            },
+            {
+              "text": "There's no such thing as too much water nowadays! We inspected it thoroughly after taking it out of the suitcase, but it looks absolutely harmless and purified. We hope we get to meet this generous stranger one day and thank him or her personally for keeping our family well hydrated.",
+              "effect": "+1_water"
+            }
+          ]
+        },
+        {
+          "name": "no",
+          "implications": [
+            {
+              "text": "It's pretty simple: if we don't know where it comes from, we cannot trust it. There's no way we're taking this gift. We left it outside, maybe some cockroach will want it. The kind of cockroach that enjoys ties, an occassional cigar and of course leather suitcases.",
+              "effect": "none"
+            },
+            {
+              "text": "We have no idea who left this and nowadays you cannot trust anybody. We're not risking our lives for some supplies, they could be poisoned! We threw the gift away and quickly forgot about it.",
+              "effect": "none"
+            },
+            {
+              "text": "What if it's some sort of complicated booby trap? We've heard some bandits around, maybe they left the suitcase and they're lurking in the shadows, waiting to steal all of our cans! We carefully moved the bag away and the next morning it was gone.",
+              "effect": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Boredom",
+      "descriptions": [
+        {
+          "text": "Let's do something today. Something fun. If we don't, someone might snap and that's the last thing we want."
+        },
+        {
+          "text": "Where is a ball when you need one? We are really bored and we need something to occupy ourselves with. Too many hours of counting pipe droplets is not healthy. There has to be an alternative."
+        },
+        {
+          "text": "There is not much you can do in this tiny bunker. We need to fight the boredom, otherwise someone might feel like going out to admire the radioactive landscape, or something equally crazy like learning about foreign geography. We need to do something!"
+        },
+        {
+          "text": "We're bored. No, really. WE'RE BORED. And we have to do something about it, or we'll end up as some cannibalistic, post-apocalyptic savages armed with toasters. It's time to do something."
+        }
+      ],
+      "choices": [
+        {
+          "name": "rifle",
+          "implications": [
+            {
+              "text": "It's man's second nature to hunt. We went to see if there's anything worth hunting outside. We ran into this nice looking man, so we started yelling loudly and waving our gun at him. He probably misunderstood this universal gesture of peace, because he fled before we could talk. But he left a can of soup behind!",
+              "effect": "+1_soup"
+            },
+            {
+              "text": "Someone needs to check if the rifle is in good condition. All it needs is a little peek down the barrel. Argh! We did take a first aid kit with us, didn't we?",
+              "effect": "-50_health"
+            }
+          ]
+        },
+        {
+          "name": "radio",
+          "implications": [
+            {
+              "text": "If you put a sea shell to your ear, you can hear the ocean. We discovered if you put your ear next to a radio, you can hear static! And it's almost like an ocean! Who needs seashells any more!",
+              "effect": "none"
+            },
+            {
+              "text": "Despite all the interference, our radio was able to get a charming groove on. We even sang a bit about not setting the world on fire. This is clearly an oldie.",
+              "effect": "none"
+            }
+          ]
+        },
+        {
+          "name": "checkers",
+          "implications": [
+            {
+              "text": "A game of checkers, a cup of coffee and a newspaper is all a 1950's man needs. There's no coffee down here, and the paper boy probably got blown up... Yay, checkers!",
+              "effect": "+30_sanity"
+            }
+          ]
+        },
+        {
+          "name": "cards",
+          "implications": [
+            {
+              "text": "There are few things as relaxing as cards... and we only have cards, so a game or two doesn't hurt.",
+              "effect": "+30_sanity"
+            }
+          ]
+        },
+        {
+          "name": "nothing",
+          "implications": [
+            {
+              "text": "We decided that staring at the walls in silence is a great way of passing the time.",
+              "effect": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Fighting the Tide",
+      "descriptions": [
+        {
+          "text": "We had planned to go to Niagara Falls and see those beautiful waterfalls. We never expected to get a waterfall of our very own in our shelter. Right now, it seems that half a dozen pipes burst and all that water is pouring right into our bunker! We need to save our supplies!"
+        },
+        {
+          "text": "What's that trickling sound? And why is the wall so wet? Are we about to get flooded? We don't have life preservers! Or a boat! A boat wouldn't even fit inside this shelter! We need to do something to save the supplies!"
+        },
+        {
+          "text": "We could've sworn that huge puddle of water wasn't there earlier... and there goes another one... oh damn it! We're getting flooded! Let's grab some of our supplies before they start floating!"
+        }
+      ],
+      "choices": [
+        {
+          "name": "map",
+          "implications": [
+            {
+              "text": "Before any of the streams squirting from the walls could hit our map, we tore it down. It was the only thing to not get wet during our little floor. After the water level had dropped we started cleaning up. We might not finish before the next apocalypse hits.",
+              "effect": "-1_radio/-1_cards"
+            }
+          ]
+        },
+        {
+          "name": "cards",
+          "implications": [
+            {
+              "text": "We're all about survival and poker games, so it wasn't too surprising when we went after our lucky set of cards first. Not a single card got wet, but plenty of other supplies were submerged. After a while , the water level dropped, but the damage it did was quite extensive. We'll have to deal with that.",
+              "effect": "-1_map/-1_radio"
+            }
+          ]
+        },
+        {
+          "name": "radio",
+          "implications": [
+            {
+              "text": "Well, that was lucky! The shelter filled with water pretty rapidly, and we were certain we were going to drown. With our heads barely above the water, we weren't even able to open the hatch and escape! Before we could start considering the worst, the water level started to drop. We're fine, save for the mess we need to deal with.",
+              "effect": "-1_map/-1_cards"
+            },
+            {
+              "text": "The radio was rescued first before any of that filthy liquid got into its case. It wasn't long before most of the water disappeared, but the damage it'd done was enough to upset us. Cleaning and fixing this mass will take us days! And what's that smell?!",
+              "effect": "-1_map/-1_cards"
+            }
+          ]
+        },
+        {
+          "name": "nothing",
+          "implications": [
+            {
+              "text": "The water got everywhere and ruined everything. Maybe not everything, but it's pretty bad. We could do with a clean-up crew. Oh wait, there are no clean-up crews in the apocalypse! It seems we'll have to deal with this mess on our own.",
+              "effect": "-1_map/-1_cards/-1_radio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Dead Air",
+      "descriptions": [
+        {
+          "text": "It has become more and more difficult to breathe in the shelter over the last couple of hours. We suspect there is something wrong with the ventilation. Maybe it got stuck somehow? But how? We need to investigate or we might suffocate."
+        },
+        {
+          "text": "A few more hours of coughing and we'll get used to it! Our ventilation fans have halted, and no fresh air seems to be circulating through the shelter. We have to fix it before we suffocate like rats trapped by a professional and very cruel rat catcher."
+        },
+        {
+          "text": "We can barely breathe in this damn shelter. For the last couple of hours the situation has been getting noticeably worse. There might be something wrong with the ventilation system. Maybe it's stuck? If that's the case, we need to look into fixing it right away!"
+        }
+      ],
+      "choices": [
+        {
+          "name": "boy scout handbook",
+          "implications": [
+            {
+              "text": "Using the handbook to research vent maintenance seemed like a fair idea. We figured if it's full of pointers on how to fix things, it much have a chapter on nuclear shelter air-filtration systems. Before we could even check, we were invaded by a group of angry, mutant insects which flew out of that cursed vent. Their stings hurt like hell and seemed to give us a fever...",
+              "effect": "-20_health/-20_sanity"
+            }
+          ]
+        },
+        {
+          "name": "flashlight",
+          "implications": [
+            {
+              "text": "The obvious thing to do when a vent is blocked, is to check what's blocking it. However, when you shine your flashlight on a hive of mutated insects, things usually go from bad to worse. The angry hive is gone, but the insects did some biting before they fled.",
+              "effect": "-40_health"
+            }
+          ]
+        },
+        {
+          "name": "bug spray",
+          "implications": [
+            {
+              "text": "We decided to ignore any problems with the vents and focus on other problems. As predicted, all of us developed a nasty cough and had trouble breathing, but it got better next morning. We don't know what the issue was, but the important thing is, it's gone now.",
+              "effect": "-1_bug spray"
+            }
+          ]
+        },
+        {
+          "name": "nothing",
+          "implications": [
+            {
+              "text": "We decided to ignore any problems with the vents and focus on other problems. As predicted, all of us developed a nasty cough and had trouble breathing, but it got better next morning. We don't know what the issue was, but the important thing is, it's gone now.",
+              "effect": "-20_health"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Trace of Human Beings",
+      "descriptions": [
+        {
+          "text": "Ted must have been hallucinating when he said that he think he have heard the sound of humans talking above them. How could anybody be nearby? No, at best it is Ted hallucinating, most likely it is some mutants outside! Should we go out and check? "
+        },
+        {
+          "text": "Today when Ted was peaking ouside, he saw something that you would never believe, some brand new tire marks on the road! Does that mean the resue team is here? Should we scout around and yell for help?"
+        },
+        {
+          "text": "It is the sound of helicopters! We knew it! It must be the rescue team sent by the government. It couldn't be some flying monsters, could it? Do we risk it and go outside?"
+        }
+      ],
+      "choices": [
+        {
+          "name": "yes",
+          "implications": [
+            {
+              "text": "The government has finally sent out the rescue team! We knew that we were saved when several masked police started coming our way. We made it!",
+              "effect": "0_rescued"
+            },
+            {
+              "text": "Oh no! It wasn't human beings after all. We were surrounded by mutants the moment we stepped outside our safe little bunker. Farewell, my beloved ones. Farewell, sweet world. Farewell, ahhhhhhhhhhhhhhhh-",
+              "effect": "0_killed"
+            },
+            {
+              "text": "We are hallucinating. Nothing outside seems different then what it used to be. Maybe no news is good news? We should hurry back before anything unexpected happens",
+              "effect": "none"
+            }
+          ]
+        },
+        {
+          "name": "no",
+          "implications": [
+            {
+              "text": "We all feel tired and just want to lay back. We couldn't be that lucky. The past few days in the bunker had killed our enthusiasm to struggle.",
+              "effect": "none"
+            },
+            {
+              "text": "Forget about it! As we listened on to what's happening outside, it turned out to be just some bothersome furry little probably-mutant animals hopping around aimlessly. We don't want to face those ugly creatures.",
+              "effect": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Soup Kitchen",
+      "descriptions": [
+        {
+          "text": "We found an unsigned letter today. The stranger asks for our help – apparently there are a few survivors in grave need of supplies and we have a chance to help them. They're saying that we won't regret it and we would make several people very, very happy. Should we do it?"
+        },
+        {
+          "text": "We received a mysterious note today, politely requesting that we share some supplies with other survivors. We have no idea who it might be from, but whoever wrote this also included a few words of encouragement, saying that we will be in some way rewarded for our generosity. Should we do it?"
+        },
+        {
+          "text": "A note on our doorstep took us all by surprise. It in [sic] we found a request to bring some supplies to a set location, signed – friends. Friends? What kind of friends? We don't know who these people are, but here's our chance to find out. They're promising to make it worth our while. Should we help them?"
+        }
+      ],
+      "choices": [
+        {
+          "name": "soup",
+          "implications": [
+            {
+              "text": "The authors of the note turned out to be twin siblings, a brother and a sister. They greeted us happily and took us to a small tent where they started handing out the supplies we brought to a small group of hungry survivors. Between them were people of all ages, including children, the elderly and even a mime. The siblings shook our hands and proclaimed this the beginning of a new friendship! They promised to contact us again soon.",
+              "effect": "-1_soup"
+            },
+            {
+              "text": "We arrived at the location and met the people who sent the letter – twin siblings, a brother and a sister. They are taking care of a group of survivors, mostly children, elderly and injured people who can't scavenge themselves. They told us that they're searching the town for any and all good and decent people in hopes of maybe uniting their strength and making everybody feel safer and cared for. They thanked us and promised to stay in touch. How nice!",
+              "effect": "-1_soup"
+            }
+          ]
+        },
+        {
+          "name": "nothing",
+          "implications": [
+            {
+              "text": "We know there's other people in need and we feel bad for them, but we cannot spare the supplies right now. This will have to wait.",
+              "effect": "none"
+            },
+            {
+              "text": "Maybe some other day we can reconsider that request, but today our answer is no. It might just be a trap anyway...",
+              "effect": "none"
+            },
+            {
+              "text": "We don't know anything about these people, how can we trust them with our lives and supplies? We're not doing this right now.",
+              "effect": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Let US OUTTT!!!",
+      "descriptions": [
+        {
+          "text": "Breathe calmly. One, two, three. That's better. Don't panic. Don't panic. WE NEED TO OPEN THE DOOR THIS INSTANT OR WE'RE ALL GOING TO DIE! OPEN THE DOOR!!!"
+        },
+        {
+          "text": "Are the walls closing in on us? Is this space getting smaller with every passing minute?! WE NEED TO GET OUT OF HERE! NOW! OPEN THE DOOR, OPEN THE DAMN DOOR."
+        },
+        {
+          "text": "Claustrophobia is difficult to fight against. Especially in a little, cluttered bunker. Maybe if we could open the door for just a few minutes... let some air in..."
+        }
+      ],
+      "choices": [
+        {
+          "name": "yes",
+          "implications": [
+            {
+              "text": "Opening the door and letting contaminated air in was a great idea. Now, instead of phobias, we need to deal with vomiting.",
+              "effect": "-20_health/-20_sanity"
+            }
+          ]
+        },
+        {
+          "name": "no",
+          "implications": [
+            {
+              "text": "Keeping the door closed was the right thing to do, but the tensions are rising in our tiny, little shelter.",
+              "effect": "-40_sanity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Beast Fight",
+      "descriptions": [
+        {
+          "text": "We are not alone. There's a huge, hairy bunny-beast that seems to be hiding in one of the pipes! It's been poking it's [sic] head out, eyeing our measly food stash. We can't let it get to it! WE CAN'T LET IT BE IN HERE WHEN WE SLEEP!"
+        },
+        {
+          "text": "What was that?! A rat? Rats are usually smaller than cats. And what's with the double tail?! We can't let that thing get to our supplies!"
+        },
+        {
+          "text": "Mutated rodents are attacking our supplies! We're not sure if they're rate, feral bunnies or just mutated hamsters. All of these options are pretty grim. We could use spare ammunition or something else to get rid of every one of these pests."
+        }
+      ],
+      "choices": [
+        {
+          "name": "gun",
+          "implications": [
+            {
+              "text": "Damn, our gun blew up when we tried to shoot the thing. Luckily, we saved our supplies.",
+              "effect": "-1_gun"
+            },
+            {
+              "text": "We fought bravely and shot until all our amunitions ran out,but we still lost 1 soup can.",
+              "effect": "-1_gun/-1_soup"
+            }
+          ]
+        },
+        {
+          "name": "axe",
+          "implications": [
+            {
+              "text": "Our cans are saved! Too bad for the hairy mutant! Guess we're still top of the food chain. Good for us.",
+              "effect": "none"
+            }
+          ]
+        },
+        {
+          "name": "nothing",
+          "implications": [
+            {
+              "text": "That beast of a rodent won. It won and stole our food. Can or no can, at least we have each other, right? We're just worried it'll come back to finish what it started...",
+              "effect": "-1_soup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Silent as the Grave",
+      "descriptions": [
+        {
+          "text": "We've discussed everything we could and no one is willing to chat anymore. The silence is really disturbing. We should do something before we start talking to ourselves instead."
+        },
+        {
+          "text": "Hear that? No? Because no one is talking. Not a word in hours. None at all. We can't just stare and stare at the walls. We need to do something about this."
+        },
+        {
+          "text": "This dreadful silence is becoming boring and like every happy-model family we don't have that many things to talk about. Is there anything we can do about that? Anything at all?"
+        }
+      ],
+      "choices": [
+        {
+          "name": "radio",
+          "implications": [
+            {
+              "text": "Ah! How fortunate we took the radio with us! We can probably listen to some music. They still play music out there, don't they?",
+              "effect": "+50_sanity"
+            }
+          ]
+        },
+        {
+          "name": "nothing",
+          "implications": [
+            {
+              "text": "There's nothing here. Maybe, if we try really hard, we can hear the neighbours in their shelter?",
+              "effect": "-10_sanity"
+            },
+            {
+              "text": "That beast of a rodent won. It won and stole our food. Can or no can, at least we have each other, right? We're just worried it'll come back to finish what it started...",
+              "effect": "-1_soup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Winner Takes it All",
+      "descriptions": [
+        {
+          "text": "Our hideout was approached be a man we didn't know. He claimed he used to be an accountant, but now he survives as a trader and... a gambler. He offered us a card game for a bet of two water bottles. Shall we play?"
+        },
+        {
+          "text": "We always steered away from casinos, gambling dens and the like. So when a man came to our door and told us he used to be a gambler, we were suspicious. He wanted us to play a game. He proposed a two water-bottle bet in a card game of our choice."
+        }
+      ],
+      "choices": [
+        {
+          "name": "cards",
+          "implications": [
+            {
+              "text": "Damn it! That man must've cheated. We lost and before we could argue about it, the man left with our supplies.",
+              "effect": "-2_water"
+            },
+            {
+              "text": "Ha ha! Lady luck has smiled on us! We won a vicious game of War. The man wasn't too happy about it, but he delivered on his promise.",
+              "effect": "+2_water"
+            }
+          ]
+        },
+        {
+          "name": "nothing",
+          "implications": [
+            {
+              "text": "We didn't want to play. Or maybe we just can't find our cards. Maybe out of pity, he gave us a soup can anyway.",
+              "effect": "+1_soup"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

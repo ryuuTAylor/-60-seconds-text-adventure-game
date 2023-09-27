@@ -1,0 +1,32 @@
+---
+# Members of your group.
+group:
+  - name: Taylor Wang
+    netid: tw492
+  - name: William Leung
+    netid: wcl53
+  - name: Evan Xin
+    netid: egx2
+  - name: Morris Mo
+    netid: tm659
+# Your PM.
+pm:
+  name: Ankit Lakkapragada
+  netid: asl256
+# Set to false if you don't want your gallery entry to be public.
+publish: true
+# Pithy title
+title: "60 Seconds Game"
+# OK if this is a Cornell Github link, but public gallery viewers won't be able to see it.
+git-repo: "https://github.coecis.cornell.edu/egx2/CS3110-OCCO-60_Seconds_Game"
+# If you have no demo screencast, replace the url string with an empty string ""
+demo-video-url: ""
+# Write a short, attention-grabbing description of your project.
+desc: >
+  Our project is a brand new text-based recreation of the classic game 
+  "60 seconds". You have just 60 seconds to grab whoever and whatever you need 
+  before everything you know becomes nuclear waste. Then, try to survive for as
+  long as you can in a bunker, facing looming threats of hunger, thirst, and 
+  insanity. Perhaps the real threats lay inside... Challenge your friends to 
+  receive a better score! You think you are a survival 
+  expert? Try yourself in this new text-based adventure game!

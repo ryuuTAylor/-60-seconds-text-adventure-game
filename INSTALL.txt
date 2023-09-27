@@ -1,0 +1,7 @@
+Instructions on how to install and build your system
+
+In you computer, unzip the ZIP file and generate a folder which contains everything in the ZIP file. 
+
+Then in the terminal, direct the directory into the folder generated. 
+
+Then type "make play" in the terminal. This would build the game engine and launch the game's text-based user interface. After that, follow the prompt on the text-based user interface and start to play the game!
